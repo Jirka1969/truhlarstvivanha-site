@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="cs">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Služby — Truhlářství Vaňha Jiří</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>.heading-serif{font-family:"Playfair Display",Georgia,serif}.ui-sans{font-family:Inter,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial}.card-accent{box-shadow:0 10px 30px rgba(36,30,20,0.06)}</style>
+</head>
+<body class="ui-sans bg-amber-50 text-gray-800">
+<header class="bg-white/80 sticky top-0 z-50 border-b">
+  <div class="max-w-6xl mx-auto flex items-center justify-between p-4">
+    <a href="index.html" class="flex items-center gap-4">
+      <img src="assets/logo.svg" alt="Truhlářství Vaňha Jiří" class="h-12">
+    </a>
+
+    <nav class="hidden md:flex items-center gap-8 text-sm font-medium">
+      <a href="index.html" class="text-amber-800">Úvod</a>
+      <a href="services.html" class="hover:text-amber-700">Služby</a>
+      <a href="portfolio.html" class="hover:text-amber-700">Portfolio</a>
+      <a href="about.html" class="hover:text-amber-700">O nás</a>
+      <a href="contact.html" class="px-4 py-2 rounded-md bg-amber-700 text-white shadow">Kontakt</a>
+    </nav>
+
+    <div class="md:hidden">
+      <button id="menu-btn" aria-label="Otevřít menu" class="text-2xl">☰</button>
+    </div>
+  </div>
+
+  <!-- Mobile menu -->
+  <div id="mobile-menu" class="md:hidden hidden border-t bg-white">
+    <div class="flex flex-col px-4 py-3 gap-3">
+      <a href="index.html" class="font-medium text-amber-800">Úvod</a>
+      <a href="services.html" class="font-medium">Služby</a>
+      <a href="portfolio.html" class="font-medium">Portfolio</a>
+      <a href="about.html" class="font-medium">O nás</a>
+      <a href="contact.html" class="font-medium bg-amber-700 text-white px-3 py-2 rounded">Kontakt</a>
+    </div>
+  </div>
+</header>
+<main class="max-w-6xl mx-auto p-8 md:p-16">
+  <h1 class="heading-serif text-4xl mb-6">Služby</h1>
+  <p class="text-gray-700 max-w-2xl mb-8">Kompletní truhlářská výroba, návrhy na míru a odborná montáž v okolí Děčína.</p>
+
+  <section class="grid gap-8">
+    <article class="bg-white p-8 rounded-xl card-accent">
+      <h2 class="text-2xl font-semibold mb-3">Masivní samonosná schodiště</h2>
+      <p class="text-gray-600 mb-3">Výroba a montáž samonosných schodišť z masivu — konzultace, návrh, statické řešení a povrchová úprava.</p>
+      <ul class="list-disc pl-5 text-gray-600">
+        <li>Měření a návrh na míru</li>
+        <li>Volba materiálu a povrchové úpravy</li>
+        <li>Profesionální montáž</li>
+      </ul>
+    </article>
+
+    <article class="bg-white p-8 rounded-xl card-accent">
+      <h2 class="text-2xl font-semibold mb-3">Kuchyně na míru</h2>
+      <p class="text-gray-600">Návrhy kuchyní šité na míru včetně korpusů, dvířek, doplňků a integrace spotřebičů.</p>
+    </article>
+
+    <article class="bg-white p-8 rounded-xl card-accent">
+      <h2 class="text-2xl font-semibold mb-3">Pergoly a zahradní stavby</h2>
+      <p class="text-gray-600">Pergoly, altány, zastřešení teras — volba vhodné dřeviny a ochranných nátěrů podle klimatických podmínek.</p>
+    </article>
+
+    <article class="bg-white p-8 rounded-xl card-accent">
+      <h2 class="text-2xl font-semibold mb-3">Nábytek na míru & montáž</h2>
+      <p class="text-gray-600">Vestavěné skříně, ložnice, stoly a další interiérové prvky. Zajišťuji i odbornou montáž zakoupeného nábytku.</p>
+    </article>
+  </section>
+</main>
+
+<footer class="bg-white border-t p-8 text-sm text-gray-600">
+  <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between">
+    <div>© <span id="year-srv"></span> Truhlářství Vaňha Jiří</div>
+    <div>Kontakt: <a href="mailto:jiri.vanha@seznam.cz" class="text-amber-700">jiri.vanha@seznam.cz</a> | <a href="tel:+420123456789" class="text-amber-700">+420 123 456 789</a></div>
+  </div>
+</footer>
+
+<script>document.getElementById('year-srv').textContent=new Date().getFullYear();document.getElementById('menu-btn-2')?.addEventListener('click',()=>document.getElementById('mobile-menu-2')?.classList.toggle('hidden'));</script>
+</body>
+</html>
