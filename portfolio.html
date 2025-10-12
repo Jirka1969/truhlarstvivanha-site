@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="cs">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Portfolio — Truhlářství Vaňha Jiří</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>.heading-serif{font-family:"Playfair Display",Georgia,serif}.card-accent{box-shadow:0 10px 30px rgba(36,30,20,0.06)}</style>
+</head>
+<body class="bg-amber-50 ui-sans text-gray-800">
+
+<header class="bg-white/80 sticky top-0 z-50 border-b">
+  <div class="max-w-6xl mx-auto flex items-center justify-between p-4">
+    <a href="index.html" class="flex items-center gap-4">
+      <img src="assets/logo.svg" alt="Truhlářství Vaňha Jiří" class="h-12">
+    </a>
+
+    <nav class="hidden md:flex items-center gap-8 text-sm font-medium">
+      <a href="index.html" class="text-amber-800">Úvod</a>
+      <a href="services.html" class="hover:text-amber-700">Služby</a>
+      <a href="portfolio.html" class="hover:text-amber-700">Portfolio</a>
+      <a href="about.html" class="hover:text-amber-700">O nás</a>
+      <a href="contact.html" class="px-4 py-2 rounded-md bg-amber-700 text-white shadow">Kontakt</a>
+    </nav>
+
+    <div class="md:hidden">
+      <button id="menu-btn" aria-label="Otevřít menu" class="text-2xl">☰</button>
+    </div>
+  </div>
+
+  <!-- Mobile menu -->
+  <div id="mobile-menu" class="md:hidden hidden border-t bg-white">
+    <div class="flex flex-col px-4 py-3 gap-3">
+      <a href="index.html" class="font-medium text-amber-800">Úvod</a>
+      <a href="services.html" class="font-medium">Služby</a>
+      <a href="portfolio.html" class="font-medium">Portfolio</a>
+      <a href="about.html" class="font-medium">O nás</a>
+      <a href="contact.html" class="font-medium bg-amber-700 text-white px-3 py-2 rounded">Kontakt</a>
+    </div>
+  </div>
+</header>
+<main class="max-w-6xl mx-auto p-8 md:p-16">
+  <h1 class="heading-serif text-4xl mb-6">Portfolio</h1>
+  <p class="text-gray-700 mb-8">Výběr dokončených realizací. Přidejte fotky přes administraci (Netlify CMS) a automaticky se zobrazí zde.</p>
+
+  <div class="grid md:grid-cols-2 gap-8">
+    <figure class="bg-white rounded-xl overflow-hidden card-accent">
+      <img src="images/placeholder.jpg" alt="Schodiště — Dub" class="w-full h-56 object-cover">
+      <figcaption class="p-6">
+        <h3 class="font-semibold mb-2">Masivní schodiště — Dub</h3>
+        <p class="text-sm text-gray-600">Samonosné schodiště pro rodinný dům, masivní dub, povrchový lak.</p>
+      </figcaption>
+    </figure>
+
+    <figure class="bg-white rounded-xl overflow-hidden card-accent">
+      <img src="images/placeholder.jpg" alt="Kuchyně na míru" class="w-full h-56 object-cover">
+      <figcaption class="p-6">
+        <h3 class="font-semibold mb-2">Kuchyně na míru</h3>
+        <p class="text-sm text-gray-600">Funkční kuchyně v kombinaci bílé a dřevěné dýhy, vestavěné spotřebiče.</p>
+      </figcaption>
+    </figure>
+
+    <figure class="bg-white rounded-xl overflow-hidden card-accent">
+      <img src="images/placeholder.jpg" alt="Pergola" class="w-full h-56 object-cover">
+      <figcaption class="p-6">
+        <h3 class="font-semibold mb-2">Pergola ze sibiřského modřínu</h3>
+        <p class="text-sm text-gray-600">Pergola s nátěrem pro dlouhou životnost.</p>
+      </figcaption>
+    </figure>
+
+    <figure class="bg-white rounded-xl overflow-hidden card-accent">
+      <img src="images/placeholder.jpg" alt="Nábytek na míru" class="w-full h-56 object-cover">
+      <figcaption class="p-6">
+        <h3 class="font-semibold mb-2">Nábytek na míru</h3>
+        <p class="text-sm text-gray-600">Vestavěné skříně a pracovní kout pro ložnici.</p>
+      </figcaption>
+    </figure>
+  </div>
+</main>
+
+<footer class="bg-white border-t p-8 text-sm text-gray-600">
+  <div class="max-w-6xl mx-auto flex items-center justify-between">
+    <div>© <span id="year-ptf"></span> Truhlářství Vaňha Jiří</div>
+    <div>Kontakt: <a href="mailto:jiri.vanha@seznam.cz" class="text-amber-700">jiri.vanha@seznam.cz</a></div>
+  </div>
+</footer>
+
+<script>document.getElementById('year-ptf').textContent=new Date().getFullYear();document.getElementById('menu-btn-3')?.addEventListener('click',()=>document.getElementById('mobile-menu-3')?.classList.toggle('hidden'));</script>
+</body>
+</html>

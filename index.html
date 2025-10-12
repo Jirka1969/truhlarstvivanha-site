@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="cs">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Truhlářství Vaňha Jiří — Domů</title>
+  <meta name="description" content="Truhlářství Vaňha Jiří (Děčín) — masivní schodiště, kuchyně na míru, pergoly a nábytek na míru." />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    :root{ --wood-600:#8b5e34; --wood-300:#d7b58a; --muted:#6b6b6b; }
+    .heading-serif { font-family: "Playfair Display", Georgia, serif; }
+    .ui-sans { font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; }
+    .hero-bg { background-image: linear-gradient(90deg, rgba(246,241,236,0.86), rgba(246,241,236,0.6)); }
+    .card-accent { box-shadow: 0 10px 30px rgba(36, 30, 20, 0.06); }
+  </style>
+</head>
+<body class="ui-sans bg-amber-50 text-gray-800">
+
+  <header class="bg-white/80 sticky top-0 z-50 border-b">
+  <div class="max-w-6xl mx-auto flex items-center justify-between p-4">
+    <a href="index.html" class="flex items-center gap-4">
+      <img src="assets/logo.svg" alt="Truhlářství Vaňha Jiří" class="h-12">
+    </a>
+
+    <nav class="hidden md:flex items-center gap-8 text-sm font-medium">
+      <a href="index.html" class="text-amber-800">Úvod</a>
+      <a href="services.html" class="hover:text-amber-700">Služby</a>
+      <a href="portfolio.html" class="hover:text-amber-700">Portfolio</a>
+      <a href="about.html" class="hover:text-amber-700">O nás</a>
+      <a href="contact.html" class="px-4 py-2 rounded-md bg-amber-700 text-white shadow">Kontakt</a>
+    </nav>
+
+    <div class="md:hidden">
+      <button id="menu-btn" aria-label="Otevřít menu" class="text-2xl">☰</button>
+    </div>
+  </div>
+
+  <!-- Mobile menu -->
+  <div id="mobile-menu" class="md:hidden hidden border-t bg-white">
+    <div class="flex flex-col px-4 py-3 gap-3">
+      <a href="index.html" class="font-medium text-amber-800">Úvod</a>
+      <a href="services.html" class="font-medium">Služby</a>
+      <a href="portfolio.html" class="font-medium">Portfolio</a>
+      <a href="about.html" class="font-medium">O nás</a>
+      <a href="contact.html" class="font-medium bg-amber-700 text-white px-3 py-2 rounded">Kontakt</a>
+    </div>
+  </div>
+</header>
+
+  <main>
+    <section class="hero-bg">
+      <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-8 items-center p-8 md:p-16">
+        <div class="space-y-6">
+          <h1 class="heading-serif text-4xl md:text-5xl font-bold text-amber-900">Poctivá práce ze dřeva<br><span class="text-2xl text-gray-800">v Děčíně</span></h1>
+          <p class="text-gray-700 max-w-xl">Vyrábím masivní samonosná schodiště, kuchyně na míru, pergoly a nábytek podle vašich představ. Nabízím návrh, kvalitní materiály a odbornou montáž.</p>
+
+          <div class="flex flex-wrap gap-4">
+            <a href="portfolio.html" class="inline-block bg-amber-900 text-white px-6 py-3 rounded-md shadow hover:bg-amber-800 transition">Zobrazit portfolio</a>
+            <a href="contact.html" class="inline-block border border-amber-700 text-amber-700 px-6 py-3 rounded-md hover:bg-amber-700 hover:text-white transition">Požádat o nabídku</a>
+          </div>
+
+          <div class="flex gap-4 text-sm text-muted">
+            <div class="flex items-center gap-2 text-gray-600"><strong class="text-amber-900">✔</strong> Zaměření a konzultace</div>
+            <div class="flex items-center gap-2 text-gray-600"><strong class="text-amber-900">✔</strong> Návrh na míru</div>
+            <div class="flex items-center gap-2 text-gray-600"><strong class="text-amber-900">✔</strong> Montáž v regionu Děčín</div>
+          </div>
+        </div>
+
+        <div class="relative">
+          <img class="w-full h-80 md:h-[420px] object-cover rounded-2xl card-accent" src="images/placeholder.jpg" alt="Ukázka schodiště — sem vložte vlastní fotografii">
+          <div class="absolute bottom-6 left-6 bg-white/75 rounded px-4 py-2 text-sm">Masivní dubové schodiště — ilustrační fotka</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="max-w-6xl mx-auto p-8 md:p-16">
+      <h2 class="heading-serif text-3xl md:text-4xl text-center mb-8">Naše služby</h2>
+      <div class="grid md:grid-cols-4 gap-8">
+        <article class="bg-white rounded-xl p-6 card-accent">
+          <div class="text-amber-700 text-3xl mb-3">🪚</div>
+          <h3 class="font-semibold text-lg mb-2">Masivní schodiště</h3>
+          <p class="text-sm text-gray-600">Samonosná schodiště z dubu, buku nebo jiných dřevin – návrh, výroba a montáž.</p>
+        </article>
+
+        <article class="bg-white rounded-xl p-6 card-accent">
+          <div class="text-amber-700 text-3xl mb-3">🍽️</div>
+          <h3 class="font-semibold text-lg mb-2">Kuchyně na míru</h3>
+          <p class="text-sm text-gray-600">Funkční a estetické kuchyně přizpůsobené vašemu prostoru a stylu.</p>
+        </article>
+
+        <article class="bg-white rounded-xl p-6 card-accent">
+          <div class="text-amber-700 text-3xl mb-3">🏡</div>
+          <h3 class="font-semibold text-lg mb-2">Pergoly & altány</h3>
+          <p class="text-sm text-gray-600">Zakázkové pergoly, přístřešky a zahradní stavby z odolné dřeviny.</p>
+        </article>
+
+        <article class="bg-white rounded-xl p-6 card-accent">
+          <div class="text-amber-700 text-3xl mb-3">🔧</div>
+          <h3 class="font-semibold text-lg mb-2">Montáž nábytku</h3>
+          <p class="text-sm text-gray-600">Odborná montáž zakoupeného nábytku — rychle a bez starostí.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="bg-white/60 py-12 md:py-20">
+      <div class="max-w-6xl mx-auto p-8">
+        <h2 class="heading-serif text-3xl text-center mb-10">Ukázky realizací</h2>
+        <div class="grid md:grid-cols-4 gap-6">
+          <div class="rounded-xl overflow-hidden card-accent bg-amber-50 h-44 flex items-center justify-center">Schodiště</div>
+          <div class="rounded-xl overflow-hidden card-accent bg-amber-50 h-44 flex items-center justify-center">Kuchyně</div>
+          <div class="rounded-xl overflow-hidden card-accent bg-amber-50 h-44 flex items-center justify-center">Pergola</div>
+          <div class="rounded-xl overflow-hidden card-accent bg-amber-50 h-44 flex items-center justify-center">Nábytek</div>
+        </div>
+        <div class="text-center mt-8">
+          <a href="portfolio.html" class="inline-block px-6 py-3 rounded-md border border-amber-700 text-amber-700 hover:bg-amber-700 hover:text-white transition">Zobrazit celé portfolio</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="max-w-3xl mx-auto text-center py-12">
+      <h3 class="heading-serif text-2xl mb-4">Chcete nezávaznou konzultaci?</h3>
+      <p class="text-gray-700 mb-6">Napište mi nebo zavolejte — rád projdu váš projekt a připravím nezávaznou kalkulaci.</p>
+      <a href="contact.html" class="bg-amber-900 text-white px-8 py-3 rounded-md shadow hover:bg-amber-800 transition">Kontaktujte mě</a>
+    </section>
+
+  </main>
+
+  <footer class="bg-white border-t">
+    <div class="max-w-6xl mx-auto p-8 md:p-12 grid md:grid-cols-3 gap-8 text-gray-700">
+      <div>
+        <img src="assets/logo.svg" alt="logo" class="h-10 mb-3">
+        <p>Děčín a okolí — zakázková výroba truhlářských prvků a montáž.</p>
+      </div>
+      <div>
+        <h4 class="font-semibold mb-3">Služby</h4>
+        <ul class="space-y-1 text-sm">
+          <li>Masivní schodiště</li>
+          <li>Kuchyně na míru</li>
+          <li>Pergoly a altány</li>
+          <li>Montáž nábytku</li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-semibold mb-3">Kontakt</h4>
+        <p class="text-sm">Telefon: <a href="tel:+420123456789" class="text-amber-700">+420 123 456 789</a></p>
+        <p class="text-sm">E-mail: <a href="mailto:jiri.vanha@seznam.cz" class="text-amber-700">jiri.vanha@seznam.cz</a></p>
+        <p class="text-sm mt-2">Region: Děčín a okolí</p>
+      </div>
+    </div>
+    <div class="text-center py-4 text-sm text-gray-400">© <span id="year"></span> Truhlářství Vaňha Jiří — Všechna práva vyhrazena</div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    const btn = document.getElementById('menu-btn');
+    const mobile = document.getElementById('mobile-menu');
+    btn?.addEventListener('click', () => mobile.classList.toggle('hidden'));
+  </script>
+</body>
+</html>

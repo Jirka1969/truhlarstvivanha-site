@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="cs">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Kontakt — Truhlářství Vaňha Jiří</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>.heading-serif{font-family:"Playfair Display",Georgia,serif}.card-accent{box-shadow:0 10px 30px rgba(36,30,20,0.06)}</style>
+</head>
+<body class="bg-amber-50 ui-sans text-gray-800">
+
+<header class="bg-white/80 sticky top-0 z-50 border-b">
+  <div class="max-w-6xl mx-auto flex items-center justify-between p-4">
+    <a href="index.html" class="flex items-center gap-4">
+      <img src="assets/logo.svg" alt="Truhlářství Vaňha Jiří" class="h-12">
+    </a>
+
+    <nav class="hidden md:flex items-center gap-8 text-sm font-medium">
+      <a href="index.html" class="text-amber-800">Úvod</a>
+      <a href="services.html" class="hover:text-amber-700">Služby</a>
+      <a href="portfolio.html" class="hover:text-amber-700">Portfolio</a>
+      <a href="about.html" class="hover:text-amber-700">O nás</a>
+      <a href="contact.html" class="px-4 py-2 rounded-md bg-amber-700 text-white shadow">Kontakt</a>
+    </nav>
+
+    <div class="md:hidden">
+      <button id="menu-btn" aria-label="Otevřít menu" class="text-2xl">☰</button>
+    </div>
+  </div>
+
+  <!-- Mobile menu -->
+  <div id="mobile-menu" class="md:hidden hidden border-t bg-white">
+    <div class="flex flex-col px-4 py-3 gap-3">
+      <a href="index.html" class="font-medium text-amber-800">Úvod</a>
+      <a href="services.html" class="font-medium">Služby</a>
+      <a href="portfolio.html" class="font-medium">Portfolio</a>
+      <a href="about.html" class="font-medium">O nás</a>
+      <a href="contact.html" class="font-medium bg-amber-700 text-white px-3 py-2 rounded">Kontakt</a>
+    </div>
+  </div>
+</header>
+<main class="max-w-6xl mx-auto p-8 md:p-16">
+  <h1 class="heading-serif text-4xl mb-4">Kontakt</h1>
+  <p class="text-gray-700 mb-6">Napište mi nebo zavolejte — rád projdu váš projekt a připravím nezávaznou kalkulaci.</p>
+
+  <div class="grid md:grid-cols-2 gap-8">
+    <div class="bg-white p-8 rounded-xl card-accent">
+      <h2 class="font-semibold mb-3">Kontakt & provoz</h2>
+      <p class="text-sm text-gray-600 mb-3">Truhlářství Vaňha Jiří — Děčín a okolí</p>
+      <p class="text-sm">Telefon: <a href="tel:+420123456789" class="text-amber-700">+420 123 456 789</a></p>
+      <p class="text-sm">E-mail: <a href="mailto:jiri.vanha@seznam.cz" class="text-amber-700">jiri.vanha@seznam.cz</a></p>
+      <p class="text-sm mt-4">Pracovní doba: Po–Pá 8:00–17:00 (jinak dle domluvy)</p>
+    </div>
+
+    <div class="bg-white p-8 rounded-xl card-accent">
+      <h2 class="font-semibold mb-3">Kontaktní formulář</h2>
+
+      <!-- Netlify form -->
+      <form name="contact" method="POST" data-netlify="true" class="space-y-4">
+        <input type="hidden" name="form-name" value="contact">
+        <label class="block text-sm">
+          Jméno
+          <input type="text" name="name" required class="mt-1 w-full border rounded px-3 py-2">
+        </label>
+        <label class="block text-sm">
+          Telefon
+          <input type="tel" name="phone" required class="mt-1 w-full border rounded px-3 py-2">
+        </label>
+        <label class="block text-sm">
+          E-mail
+          <input type="email" name="email" required class="mt-1 w-full border rounded px-3 py-2">
+        </label>
+        <label class="block text-sm">
+          Zpráva
+          <textarea name="message" rows="5" required class="mt-1 w-full border rounded px-3 py-2"></textarea>
+        </label>
+
+        <div class="flex gap-3">
+          <button type="submit" class="bg-amber-900 text-white px-4 py-2 rounded">Odeslat</button>
+          <button type="reset" class="border px-4 py-2 rounded">Vymazat</button>
+        </div>
+      </form>
+
+    </div>
+  </div>
+
+  <div class="mt-12 bg-white p-6 rounded-xl card-accent">
+    <h3 class="font-semibold mb-2">Mapa</h3>
+    <p class="text-sm text-gray-600 mb-3">Sem můžete vložit iframe Google Maps s přesnou polohou vaší dílny.</p>
+    <div class="bg-amber-50 h-48 rounded flex items-center justify-center text-gray-400">Mapa — vložte iframe sem</div>
+  </div>
+</main>
+
+<footer class="bg-white border-t p-8 text-sm text-gray-600">
+  <div class="max-w-6xl mx-auto flex items-center justify-between">
+    <div>© <span id="year-ct"></span> Truhlářství Vaňha Jiří</div>
+    <div>jiri.vanha@seznam.cz</div>
+  </div>
+</footer>
+
+<script>document.getElementById('year-ct').textContent=new Date().getFullYear();document.getElementById('menu-btn-5')?.addEventListener('click',()=>document.getElementById('mobile-menu-5')?.classList.toggle('hidden'));</script>
+</body>
+</html>
