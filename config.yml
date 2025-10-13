@@ -1,0 +1,47 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "images/uploads"
+public_folder: "/images/uploads"
+
+site_url: "https://truhlarstvivanha.netlify.app"
+
+collections:
+  - name: "stranky"
+    label: "Stránky"
+    files:
+      - file: "index.html"
+        label: "Domů"
+        name: "home"
+        fields:
+          - { label: "Titulek", name: "title", widget: "string" }
+          - { label: "Obsah", name: "body", widget: "markdown" }
+
+      - file: "o-nas.html"
+        label: "O nás"
+        name: "onas"
+        fields:
+          - { label: "Titulek", name: "title", widget: "string" }
+          - { label: "Obsah", name: "body", widget: "markdown" }
+
+      - file: "sluzby.html"
+        label: "Služby"
+        name: "sluzby"
+        fields:
+          - { label: "Titulek", name: "title", widget: "string" }
+          - { label: "Obsah", name: "body", widget: "markdown" }
+
+      - file: "portfolio.html"
+        label: "Portfolio"
+        name: "portfolio"
+        fields:
+          - { label: "Titulek", name: "title", widget: "string" }
+          - { label: "Obsah", name: "body", widget: "markdown" }
+
+      - file: "kontakt.html"
+        label: "Kontakt"
+        name: "kontakt"
+        fields:
+          - { label: "Titulek", name: "title", widget: "string" }
+          - { label: "Obsah", name: "body", widget: "markdown" }
