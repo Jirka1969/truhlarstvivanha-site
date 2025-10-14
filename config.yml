@@ -1,11 +1,12 @@
 backend:
-  name: git-gateway
+  name: github
+  repo: Jirka1969/truhlarstvivanha-site
   branch: main
 
 media_folder: "images/uploads"
 public_folder: "/images/uploads"
 
-site_url: "https://truhlarstvivanha.netlify.app"
+site_url: "https://truhlarstvivanha-site-mtn1zr8pb-jiri-vanhas-projects.vercel.app"
 
 collections:
   - name: "stranky"
