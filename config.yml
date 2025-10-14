@@ -2,6 +2,9 @@ backend:
   name: github
   repo: Jirka1969/truhlarstvivanha-site
   branch: main
+  base_url: https://truhlarstvivanha-site-mtn1zr8pb-jiri-vanhas-projects.vercel.app
+  auth_endpoint: /admin/auth.html
+  client_id: Ov23lir5cQHPK667kcJW
 
 media_folder: "images/uploads"
 public_folder: "/images/uploads"
