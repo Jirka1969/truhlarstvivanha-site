@@ -2,14 +2,14 @@ backend:
   name: github
   repo: Jirka1969/truhlarstvivanha-site
   branch: main
-  base_url: https://truhlarstvivanha-site-mtn1zr8pb-jiri-vanhas-projects.vercel.app
-  auth_endpoint: /admin/auth.html
+  base_url: https://TVOJ_OAUTH_PROVIDER_ADRESA.vercel.app
+  auth_endpoint: /auth
   client_id: Ov23lir5cQHPK667kcJW
 
 media_folder: "images/uploads"
 public_folder: "/images/uploads"
 
-site_url: "https://truhlarstvivanha-site-mtn1zr8pb-jiri-vanhas-projects.vercel.app"
+site_url: "https://jirka1969-netlify-cms-oauth-provider.vercel.app"
 
 collections:
   - name: "stranky"
