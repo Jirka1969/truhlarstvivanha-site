@@ -5,7 +5,7 @@ backend:
   base_url: https://jirka1969-netlify-cms-oauth-provider.vercel.app
   auth_endpoint: /auth
   client_id: Ov23lir5cQHPK667kcJW
-
+  
 media_folder: "images/uploads"
 public_folder: "/images/uploads"
 
@@ -20,3 +20,4 @@ collections:
     fields:
       - { label: "Titulek", name: "title", widget: "string" }
       - { label: "Obsah", name: "body", widget: "markdown" }
+
